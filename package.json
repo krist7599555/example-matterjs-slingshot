@@ -2,7 +2,7 @@
   "name": "example-matterjs-slingshot",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --outDir docs --base example-matterjs-slingshot/"
+    "build": "vite build --outDir docs --base /example-matterjs-slingshot/"
   },
   "devDependencies": {
     "@types/matter-js": "^0.17.7",
