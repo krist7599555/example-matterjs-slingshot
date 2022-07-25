@@ -10,6 +10,7 @@
     "vite": "^3.0.2"
   },
   "dependencies": {
-    "matter-js": "^0.18.0"
+    "matter-js": "^0.18.0",
+    "rxjs": "^7.5.6"
   }
 }
