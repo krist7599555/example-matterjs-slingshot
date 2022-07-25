@@ -8,4 +8,5 @@ use matter.js to create slingshot game
 
 ## Learning Resource
 
+- [matter.js game in 10 min (youtube)](https://www.youtube.com/watch?v=PsL3iI61wl8)
 - [matter.js get start](https://github.com/liabru/matter-js/wiki/Getting-started)
