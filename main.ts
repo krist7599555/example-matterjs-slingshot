@@ -1,18 +1,25 @@
 import { Engine, Bodies, Render, Composite, Runner } from "matter-js";
 
+const WIDTH = 800;
+const HEIGHT = 600;
+
 // create an engine
-var engine = Engine.create();
+const engine = Engine.create();
 
 // create a renderer
-var render = Render.create({
+const render = Render.create({
   element: document.body,
   engine: engine,
+  options: {
+    width: WIDTH,
+    height: HEIGHT,
+  },
 });
 
 // create two boxes and a ground
-var boxA = Bodies.rectangle(400, 200, 80, 80);
-var boxB = Bodies.rectangle(450, 50, 80, 80);
-var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
+const boxA = Bodies.rectangle(400, 200, 80, 80);
+const boxB = Bodies.rectangle(450, 50, 80, 80);
+const ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
 
 // add all of the bodies to the world
 Composite.add(engine.world, [boxA, boxB, ground]);
@@ -21,7 +28,7 @@ Composite.add(engine.world, [boxA, boxB, ground]);
 Render.run(render);
 
 // create runner
-var runner = Runner.create();
+const runner = Runner.create();
 
 // run the engine
 Runner.run(runner, engine);
